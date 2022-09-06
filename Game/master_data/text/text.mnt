@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings default="NA">
+  <group id="contents">
+    <string id="">
+      <lang id="EN"></lang>
+    </string>
+    <string id="">
+      <lang id="EN"></lang>
+    </string>
+    <string id="TIMER">
+      <lang id="EN">Timer</lang>
+    </string>
+    <string id="SCORE">
+      <lang id="EN">Score</lang>
+    </string>
+    <string id="PLAY_NOW">
+      <lang id="EN">MAIN PERMAINAN MINI</lang>
+    </string>
+    <string id="CONGRATULATIONS">
+      <lang id="EN">CONGRATULATIONS!</lang>
+    </string>
+    <string id="YOUR_SCORE">
+      <lang id="EN">YOUR SCORE IS:</lang>
+    </string>
+    <string id="REWARD">
+      <lang id="EN">YOU JUST WON %d %token% Alibaba</lang>
+    </string>
+    <string id="REWARD_GETTING">
+      <lang id="EN">GETTING THE REWARD...</lang>
+    </string>
+    <string id="REWARD_CANTGET">
+      <lang id="EN">YOUR REWARD COULD NOT BE DELIVERED DUE TO A LOST CONNECTION. REPLAY WITH A BETTER CONNECTION TO GET IT!</lang>
+    </string>
+    <string id="CHECK_NOW">
+      <lang id="EN">GET READY</lang>
+    </string>
+    <string id="TUTORIAL_1">
+      <lang id="EN">SWIPE LEFT OR RIGHT TO CHANGE LANES</lang>
+    </string>
+    <string id="TUTORIAL_2">
+      <lang id="EN">SWIPE UP TO JUMP AND AVOID THE OBSTACLES!</lang>
+    </string>
+    <string id="TUTORIAL_3">
+      <lang id="EN">COLLECT ITEMS TO SCORE POINTS AND FILL UP THE POWER BAR.</lang>
+    </string>
+    <string id="TAP_CONTINUE">
+      <lang id="EN">Tap to continue</lang>
+    </string>
+    <string id="LOADING">
+      <lang id="EN">LOADING...</lang>
+    </string>
+    <string id="INTERSTITIAL_1">
+      <lang id="EN">PLAY A MINI-GAME</lang>
+    </string>
+    <string id="INTERSTITIAL_2">
+      <lang id="EN">MINI-GAME</lang>
+    </string>
+    <string id="INTERSTITIAL_3">
+      <lang id="EN">AND WIN</lang>
+    </string>
+    <string id="LOST_CONNECT">
+      <lang id="EN">PLEASE CHECK YOUR CONNECTION AND TRY AGAIN.</lang>
+    </string>
+    <string id="EXIT_POPUP">
+      <lang id="EN">ARE YOU SURE YOU WANT TO QUIT? YOU WILL NOT GET YOUR REWARD.</lang>
+    </string>
+    <string id="EXIT_POPUP_1">
+      <lang id="EN">QUIT</lang>
+    </string>
+    <string id="EXIT_POPUP_2">
+      <lang id="EN">RESUME</lang>
+    </string>
+    <string id="RETRY">
+      <lang id="EN">RETRY</lang>
+    </string>
+    <string id="AD_TEXT">
+      <lang id="EN">Advertisement</lang>
+    </string>
+    <string id="ACTION_1">
+      <lang id="EN">FRENZY!</lang>
+    </string>
+    <string id="ACTION_2">
+      <lang id="EN">TIME'S UP!</lang>
+    </string>
+    <string id="ACTION_3">
+      <lang id="EN">COMBO X</lang>
+    </string>
+    <string id="END_1">
+      <lang id="EN">REPLAY</lang>
+    </string>
+    <string id="CHAR_SELECT_1">
+      <lang id="EN">SELECT YOUR CHARACTER!</lang>
+    </string>
+    <string id="CHAR_SELECT_2">
+      <lang id="EN">BOY</lang>
+    </string>
+    <string id="CHAR_SELECT_3">
+      <lang id="EN">GIRL</lang>
+    </string>
+    <string id="POINT_TEXT">
+      <lang id="EN">PTS</lang>
+    </string>
+    <string id="REINVENT_TEXT">
+      <lang id="EN">REINVENT</lang>
+    </string>
+    <string id="DONIMATION_TEXT">
+      <lang id="EN">DOMINATION</lang>
+    </string>
+    <string id="PLAY_NOW_2">
+      <lang id="EN">DAN DAPAT %d %token%</lang>
+    </string>
+    <string id="">
+      <lang id="EN"></lang>
+    </string>
+    <string id="">
+      <lang id="EN"></lang>
+    </string>
+  </group>
+</strings>

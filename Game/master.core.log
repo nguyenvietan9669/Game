@@ -1,0 +1,369 @@
+﻿Building all resources on 4 thread(s)
+
+WARNING: partial parallel building, ONE type at once.
+  Add at least ONE dependency in the .core file to trigger full parallel building
+  Example: <Type uid="52D174F0" id="Texts" csStyle="r" depends="ODS2MNT">
+
+1>------ Build started: GAMES ------
+1> ... GUI / [master_data\gui\gui.game]
+--- BEGIN LOG (GUI.log) ---
+
+Game Exporter
+by AuroraGT v0.1.2.1 (GameEditor v0.1.0.8, SpriteEditor v0.1.1.1, MapEditor v0.0.1.1)
+
+Desc: "GUI"
+Export path: "."
+------------------------------
+
+Generate GTS Data Type Format
+------------------------------
+
+------------------------------
+
+Generate GTS SRC file
+------------------------------
+
+------------------------------
+
+Generate Cinematics SRC file
+------------------------------
+
+------------------------------
+
+Exporting objects for level1 ("preload_lanscape")...
+{
+    File: "level1.layers"
+    play_btn(GUI_GfxItem): 200 397 535 13 0 8 -1 1
+    client_logo(GUI_GfxItem): 200 397 120 13 0 15 -1 0
+    copyright_box(GUI_GfxItem): 200 601 716 11 0 14 -1 1
+    ads_text(GUI_GfxItem): 200 1163 711 12 0 6 -1 1
+    info(GUI_GfxItem): 200 1050 712 12 0 5 -1 1
+    play_text(GUI_TextItem): 201 158 360 13 2 40 483 100 0 0 0 0 2 0 0 0 0
+    play_text_002(GUI_TextItem): 201 158 386 13 33 40 483 100 0 0 0 0 2 0 0 0 0
+    exit(GUI_GfxItem): 200 1288 46 5 0 1 -1 1
+    copyright(GUI_GfxItem): 200 658 716 11 0 13 -1 1
+    client_txt_01(GUI_GfxItem): 200 1129 54 5 0 11 -1 1
+    client_txt_02(GUI_GfxItem): 200 1129 54 5 0 12 -1 0
+    gl_logo(GUI_GfxItem): 200 133 712 11 0 10 -1 1
+}
+
+Exporting objects for level2 ("preload_portrait")...
+{
+    File: "level2.layers"
+    info(GUI_GfxItem): 200 507 1311 8 0 5 -1 1
+    ads_text(GUI_GfxItem): 200 614 1311 8 0 6 -1 1
+    play_text(GUI_TextItem): 201 138 833 13 2 40 483 100 0 0 0 0 2 0 0 0 0
+    play_text_002(GUI_TextItem): 201 138 890 13 33 40 483 100 0 0 0 0 2 0 0 0 0
+    gl_logo(GUI_GfxItem): 200 115 1297 4 0 10 -1 1
+    play_btn(GUI_GfxItem): 200 390 1015 13 0 7 -1 1
+    exit(GUI_GfxItem): 200 704 46 5 0 1 -1 1
+}
+
+Exporting objects for level3 ("loading")...
+{
+    File: "level3.layers"
+    exit(GUI_GfxItem): 200 711 41 5 0 1 -1 1
+    ads_text(GUI_GfxItem): 200 614 1311 5 0 6 -1 1
+    title(GUI_TextItem): 201 209 943 5 13 40 346 50 0 0 0 1 2 0 0 0 0
+    loading_icon(GUI_GfxItem): 200 383 794 5 0 4 -1 1
+    lost_connection_bg(GUI_GfxItem): 200 374 566 13 0 9 -1 0
+    lost_connection(GUI_TextItem): 201 133 485 13 17 40 483 100 0 0 0 0 2 0 0 0 0
+    retry(GUI_GfxItem): 200 374 639 13 0 2 -1 1
+}
+
+Exporting objects for level4 ("object")...
+{
+    File: "level4.layers"
+    frame(GUI_GfxItem): 200 181 140 0 2 0 -1 1
+    anim(GUI_GfxItem): 200 197 156 0 2 -1 0 1
+}
+
+Exporting objects for level5 ("exitpopup")...
+{
+    File: "level5.layers"
+    bg(GUI_GfxItem): 200 374 667 13 2 8 -1 1
+    description(GUI_TextItem): 201 149 550 13 18 38 450 143 0 0 0 0 2 0 0 0 0
+    cancel(GUI_GfxItem): 200 483 744 13 2 9 -1 1
+    ok(GUI_GfxItem): 200 264 744 13 2 10 -1 1
+}
+
+Exporting objects for level6 ("lostconnectpopup")...
+{
+    File: "level6.layers"
+    bg(GUI_GfxItem): 200 375 666 13 2 8 -1 1
+    description(GUI_TextItem): 201 141 544 13 7 30 469 150 0 0 0 0 2 0 0 0 0
+    ok(GUI_GfxItem): 200 374 745 13 2 83 -1 1
+}
+
+Exporting objects for level7 ("ingame_ui")...
+{
+    File: "level7.layers"
+    logo(GUI_GfxItem): 200 374 85 13 2 85 -1 1
+    score_icon(GUI_GfxItem): 200 180 250 13 2 6 -1 1
+    connection_bar(GUI_GfxItem): 200 377 192 13 2 86 -1 1
+    connection_gauge_1(GUI_GfxItem): 200 338 200 13 2 88 -1 0
+    connection_gauge_2(GUI_GfxItem): 200 364 197 13 2 89 -1 0
+    connection_gauge_3(GUI_GfxItem): 200 390 195 13 2 90 -1 0
+    connection_gauge_4(GUI_GfxItem): 200 416 192 13 2 91 -1 0
+    frenzy_bar(GUI_GfxItem): 200 378 251 13 2 47 -1 1
+    frenzy_gauge(GUI_GfxItem): 200 379 250 13 2 48 -1 1
+    timer_icon(GUI_GfxItem): 200 577 250 13 2 7 -1 1
+    time(GUI_TextItem): 201 533 230 13 1 46 61 36 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8 2 0 0 0 0
+    score(GUI_TextItem): 201 146 230 13 1 46 79 38 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8 2 0 0 0 0
+    exit(GUI_GfxItem): 200 714 44 5 2 1 -1 1
+    ads_text(GUI_GfxItem): 200 614 1308 5 2 5 -1 1
+}
+
+Exporting objects for level8 ("tutorial")...
+{
+    File: "level8.layers"
+    tut_1(GUI_GfxItem): 200 375 830 13 2 -1 14 1
+    tut_2(GUI_GfxItem): 200 375 830 13 2 -1 13 1
+    tut_3(GUI_GfxItem): 200 375 830 13 2 -1 18 1
+    tut_board_1(GUI_GfxItem): 200 374 430 13 2 79 -1 1
+    tut_board_2(GUI_GfxItem): 200 374 430 13 2 95 -1 1
+    tut_board_3(GUI_GfxItem): 200 374 430 13 2 96 -1 1
+}
+
+Exporting objects for level9 ("gameover")...
+{
+    File: "level9.layers"
+    bg(GUI_GfxItem): 200 374 667 13 5 0 -1 1
+    icon(GUI_GfxItem): 200 318 718 13 0 0 -1 1
+    gl_logo(GUI_GfxItem): 200 111 1290 1 0 10 -1 1
+    info(GUI_GfxItem): 200 510 1311 8 2 4 -1 1
+    ads_text(GUI_GfxItem): 200 615 1311 5 2 5 -1 1
+    tf_reward(GUI_TextItem): 201 70 -497 13 17 25 686 135 0 171:ERROR:S8 171:ERROR:S8 171:ERROR:S8 2 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8
+    tf_score(GUI_TextItem): 201 274 346 13 4 70 218 64 0 0 0 0 2 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8
+    tf_score_congrat(GUI_TextItem): 201 223 287 13 4 38 325 46 0 0 0 0 2 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8
+    tf_congratulation(GUI_TextItem): 201 143 217 13 3 50 479 60 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8 2 0 255:ERROR:S8 255:ERROR:S8 255:ERROR:S8
+    checknow(GUI_GfxItem): 200 396 1020 13 2 81 -1 1
+    retry(GUI_GfxItem): 200 43 45 1 2 2 -1 1
+    close(GUI_GfxItem): 200 704 44 5 2 1 -1 1
+    txt_title(GUI_GfxItem): 200 517 1105 13 0 0 -1 1
+}
+
+------------------------------
+
+Exporting task level1 ("preload_lanscape")...
+{
+    File: "level1.tasks"
+}
+
+Exporting task level2 ("preload_portrait")...
+{
+    File: "level2.tasks"
+}
+
+Exporting task level3 ("loading")...
+{
+    File: "level3.tasks"
+}
+
+Exporting task level4 ("object")...
+{
+    File: "level4.tasks"
+}
+
+Exporting task level5 ("exitpopup")...
+{
+    File: "level5.tasks"
+}
+
+Exporting task level6 ("lostconnectpopup")...
+{
+    File: "level6.tasks"
+}
+
+Exporting task level7 ("ingame_ui")...
+{
+    File: "level7.tasks"
+}
+
+Exporting task level8 ("tutorial")...
+{
+    File: "level8.tasks"
+}
+
+Exporting task level9 ("gameover")...
+{
+    File: "level9.tasks"
+}
+
+------------------------------
+
+Exporting cinematic define in GTS ("gui.game")...
+{
+     emun TYPE:
+     {
+         "NONE"   	= 0
+         "INT8"   	= 1
+         "UINT8"  	= 2
+         "INT16"  	= 3
+         "UINT16" 	= 4
+         "INT32"  	= 5
+         "UINT32" 	= 6
+    }
+    File: "gui.cinematicdef"
+    "NUM_CINEMATICS" 1    
+    "CINEMATIC_ID" 3    
+    "CINEMATIC_NUM_THREAD" 1    
+    "CINEMATIC_NUM_KEY_FRAMES" 3    
+    "THREAD_TYPE" 1    
+    "THREAD_FLAG" 1    
+    "THREAD_OBJLAYER_OBJlAYER_ID" 3    
+    "THREAD_SI_SPRITE_ID" 3    
+    "THREAD_NUM_KEY_FRAMES" 3    
+    "KEY_FRAME_TIME" 1    
+    "KEY_FRAME_NUM_COMMANDS" 1    
+    "GAME_NUM_COMMANDS" 1    
+    "COMMAND_ID" 1    
+    "COMMAND_NUM_PARAMS" 1    
+    
+    Number commands define in GTS =  12    
+    (SendEvent2)  2 3 3    
+    (SendEvent3)  3 3 3 3    
+    (SetPos)  2 3 3    
+    (SetAnim)  2 1 1    
+    (AddFlags)  1 5    
+    (RemoveFlags)  1 5    
+    (SetScale)  2 3 3    
+    (SetRotation)  1 3    
+    (SetAlpha)  1 1    
+    (SetPalette)  1 1    
+    (SetFrame)  1 1    
+    (Repeat)  2 3 3    
+}
+
+Exporting cinematics level1 ("preload_lanscape")...
+{
+    File: "level1.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level2 ("preload_portrait")...
+{
+    File: "level2.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level3 ("loading")...
+{
+    File: "level3.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level4 ("object")...
+{
+    File: "level4.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level5 ("exitpopup")...
+{
+    File: "level5.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level6 ("lostconnectpopup")...
+{
+    File: "level6.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level7 ("ingame_ui")...
+{
+    File: "level7.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level8 ("tutorial")...
+{
+    File: "level8.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+Exporting cinematics level9 ("gameover")...
+{
+    File: "level9.gtscinematics"
+    
+    Number of Cinematics:  0    
+}
+
+---- END LOG ----
+2>------ Build started: ODS2MNT ------
+3>------ Build started: TEXTS ------
+4>------ Build started: SPRITES ------
+4> ... MC / [master_data\sprite\mc.sprite]
+4> ... BG / [master_data\sprite\bg.sprite]
+4> ... GAME / [master_data\sprite\game.sprite]
+4> ... GAMEOVER / [master_data\sprite\gameover.sprite]
+Sprite Commands File: "export.sprcmd"
+
+CMD001: SetGlobalBSpriteFlags...
+	GlobalBSpriteFlags: 0x003585B1 (BS_MODULES | BS_MODULES_WH_SHORT | BS_MODULES_XY_SHORT | BS_FRAMES | BS_FM_OFF_SHORT | BS_FRAME_RECTS | BS_ANIMS | BS_AF_OFF_SHORT | BS_FM_INDEX_SHORT | BS_AF_INDEX_SHORT | BS_IMAGE_SIZE_INT | BS_DEFAULT_MIDP2 | BS_DEFAULT_NOKIA | BS_DEFAULT_MIDP1 | BS_DEFAULT_MIDP1b | BS_DEFAULT_OGLES)
+
+CMD002: Load...
+	File: "bg.sprite"
+
+CMD003: ExportBSpriteEx...
+
+3 commands were executed (0 errors, 0 warnings)
+Sprite Commands File: "export.sprcmd"
+
+CMD001: SetGlobalBSpriteFlags...
+	GlobalBSpriteFlags: 0x003585B1 (BS_MODULES | BS_MODULES_WH_SHORT | BS_MODULES_XY_SHORT | BS_FRAMES | BS_FM_OFF_SHORT | BS_FRAME_RECTS | BS_ANIMS | BS_AF_OFF_SHORT | BS_FM_INDEX_SHORT | BS_AF_INDEX_SHORT | BS_IMAGE_SIZE_INT | BS_DEFAULT_MIDP2 | BS_DEFAULT_NOKIA | BS_DEFAULT_MIDP1 | BS_DEFAULT_MIDP1b | BS_DEFAULT_OGLES)
+
+CMD002: Load...
+	File: "gameover.sprite"
+
+CMD003: ExportBSpriteEx...
+
+3 commands were executed (0 errors, 0 warnings)
+4> ... MC2 / [master_data\sprite\mc2.sprite]
+Sprite Commands File: "export.sprcmd"
+
+CMD001: SetGlobalBSpriteFlags...
+	GlobalBSpriteFlags: 0x003585B1 (BS_MODULES | BS_MODULES_WH_SHORT | BS_MODULES_XY_SHORT | BS_FRAMES | BS_FM_OFF_SHORT | BS_FRAME_RECTS | BS_ANIMS | BS_AF_OFF_SHORT | BS_FM_INDEX_SHORT | BS_AF_INDEX_SHORT | BS_IMAGE_SIZE_INT | BS_DEFAULT_MIDP2 | BS_DEFAULT_NOKIA | BS_DEFAULT_MIDP1 | BS_DEFAULT_MIDP1b | BS_DEFAULT_OGLES)
+
+CMD002: Load...
+	File: "mc.sprite"
+
+CMD003: ExportBSpriteEx...
+
+3 commands were executed (0 errors, 0 warnings)
+Sprite Commands File: "export.sprcmd"
+
+CMD001: SetGlobalBSpriteFlags...
+	GlobalBSpriteFlags: 0x003585B1 (BS_MODULES | BS_MODULES_WH_SHORT | BS_MODULES_XY_SHORT | BS_FRAMES | BS_FM_OFF_SHORT | BS_FRAME_RECTS | BS_ANIMS | BS_AF_OFF_SHORT | BS_FM_INDEX_SHORT | BS_AF_INDEX_SHORT | BS_IMAGE_SIZE_INT | BS_DEFAULT_MIDP2 | BS_DEFAULT_NOKIA | BS_DEFAULT_MIDP1 | BS_DEFAULT_MIDP1b | BS_DEFAULT_OGLES)
+
+CMD002: Load...
+	File: "game.sprite"
+
+CMD003: ExportBSpriteEx...
+
+3 commands were executed (0 errors, 0 warnings)
+Sprite Commands File: "export.sprcmd"
+
+CMD001: SetGlobalBSpriteFlags...
+	GlobalBSpriteFlags: 0x003585B1 (BS_MODULES | BS_MODULES_WH_SHORT | BS_MODULES_XY_SHORT | BS_FRAMES | BS_FM_OFF_SHORT | BS_FRAME_RECTS | BS_ANIMS | BS_AF_OFF_SHORT | BS_FM_INDEX_SHORT | BS_AF_INDEX_SHORT | BS_IMAGE_SIZE_INT | BS_DEFAULT_MIDP2 | BS_DEFAULT_NOKIA | BS_DEFAULT_MIDP1 | BS_DEFAULT_MIDP1b | BS_DEFAULT_OGLES)
+
+CMD002: Load...
+	File: "mc2.sprite"
+
+CMD003: ExportBSpriteEx...
+
+3 commands were executed (0 errors, 0 warnings)
+
+Total items: 9
+Total checksums: 12
+Total (re)builds: 6
+

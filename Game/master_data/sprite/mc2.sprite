@@ -1,0 +1,268 @@
+// saved by AuroraGT v0.1.2.1 (SpriteEditor v0.1.1.1)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  1
+    // Modules: 22
+    // Frames:  22
+    // Anims:   7
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0000 "..\image\MC2.png" TRANSP 0x00FF00FF // 0  size: 2048 x 2048  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_LINE)	   -> color width height
+//              if (Type == MD_FILL_RECT_GRAD) -> color01 color02 direction width height
+//              if (Type == MD_GRADIENT_TRIANGLE) -> x0 y0 color0 x1 y1 color1 x2 y2 color2
+//              if (Type == MD_GRADIENT_RECT) -> x0 y0 color0 x1 y1 color1 x2 y2 color2 x3 y3 color3
+//              if (Type == MD_MESH)    -> image numOfCorner p0x p0y p1x p1y p2x p2y ... 
+
+    MODULES
+    {
+        MD	0x1028	MD_IMAGE	0	0	0	1	1	"empty"
+        MD	0x1000	MD_IMAGE	0	609	1144	268	459	"move_center_to_left_01"
+        MD	0x1001	MD_IMAGE	0	878	1171	257	496	"move_center_to_left_02"
+        MD	0x1002	MD_IMAGE	0	1140	1190	232	500	"move_center_to_left_03"
+        MD	0x1003	MD_IMAGE	0	96	1182	230	500	"move_left_to_center_01"
+        MD	0x1004	MD_IMAGE	0	338	1165	257	496	"move_left_to_center_02"
+        MD	0x1005	MD_IMAGE	0	609	1144	267	459	"move_left_to_center_03"
+        MD	0x1006	MD_IMAGE	0	609	1144	268	459	"move_center_to_right_01"
+        MD	0x1007	MD_IMAGE	0	338	1165	257	496	"move_center_to_right_02"
+        MD	0x1008	MD_IMAGE	0	96	1182	232	500	"move_center_to_right_03"
+        MD	0x1009	MD_IMAGE	0	1140	1190	232	500	"move_right_to_center_01"
+        MD	0x100A	MD_IMAGE	0	879	1171	256	496	"move_right_to_center_02"
+        MD	0x100B	MD_IMAGE	0	609	1144	266	459	"move_right_to_center_03"
+        MD	0x100C	MD_IMAGE	0	77	95	282	470	"move_jump_01"
+        MD	0x100D	MD_IMAGE	0	365	69	282	497	"move_jump_02"
+        MD	0x100E	MD_IMAGE	0	657	61	312	491	"move_jump_03"
+        MD	0x100F	MD_IMAGE	0	975	61	328	443	"move_jump_04"
+        MD	0x1010	MD_IMAGE	0	1316	64	398	417	"move_jump_05"
+        MD	0x1011	MD_IMAGE	0	506	583	417	475	"move_jump_06"
+        MD	0x1012	MD_IMAGE	0	941	575	406	484	"move_jump_07"
+        MD	0x1013	MD_IMAGE	0	1372	536	342	483	"move_jump_08"
+        MD	0x1014	MD_IMAGE	0	1670	1512	89	89	"shadow"
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <POi>   := PO numOfCorner x1 y1 x2 y2...
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "empty" // Index = 0, FModules = 1
+    {
+        0x2000
+        FM	0x1028	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_left_01" // Index = 1, FModules = 1
+    {
+        0x2001
+        FM	0x1000	-134	-230	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_left_02" // Index = 2, FModules = 1
+    {
+        0x2002
+        FM	0x1001	-128	-248	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_left_03" // Index = 3, FModules = 1
+    {
+        0x2003
+        FM	0x1002	-116	-250	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_left_to_center_01" // Index = 4, FModules = 1
+    {
+        0x2004
+        FM	0x1003	-115	-250	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_left_to_center_02" // Index = 5, FModules = 1
+    {
+        0x2005
+        FM	0x1004	-128	-249	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_left_to_center_03" // Index = 6, FModules = 1
+    {
+        0x2006
+        FM	0x1005	-132	-230	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_right_01" // Index = 7, FModules = 1
+    {
+        0x2007
+        FM	0x1006	-136	-232	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_right_02" // Index = 8, FModules = 1
+    {
+        0x2008
+        FM	0x1007	-127	-249	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_center_to_right_03" // Index = 9, FModules = 1
+    {
+        0x2009
+        FM	0x1008	-116	-250	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_right_to_center_01" // Index = 10, FModules = 1
+    {
+        0x200A
+        FM	0x1009	-117	-250	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_right_to_center_02" // Index = 11, FModules = 1
+    {
+        0x200B
+        FM	0x100A	-129	-248	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_right_to_center_03" // Index = 12, FModules = 1
+    {
+        0x200C
+        FM	0x100B	-134	-229	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "move_jump_01" // Index = 13, FModules = 1
+    {
+        0x200D
+        FM	0x100C	-123	-255	FREE_ROTATE 0	FREE_SCALE_XY 100 100 18.0 1.0
+    }
+
+    FRAME "move_jump_02" // Index = 14, FModules = 1
+    {
+        0x200E
+        FM	0x100D	-123	-250	FREE_ROTATE 0	FREE_SCALE_XY 100 100 17.0 12.0
+    }
+
+    FRAME "move_jump_03" // Index = 15, FModules = 1
+    {
+        0x200F
+        FM	0x100E	-131	-242	FREE_ROTATE 0	FREE_SCALE_XY 100 100 26.0 14.0
+    }
+
+    FRAME "move_jump_04" // Index = 16, FModules = 1
+    {
+        0x2010
+        FM	0x100F	-134	-236	FREE_ROTATE 0	FREE_SCALE_XY 100 100 30.0 -9.0
+    }
+
+    FRAME "move_jump_05" // Index = 17, FModules = 1
+    {
+        0x2011
+        FM	0x1010	-191	-240	FREE_ROTATE 0	FREE_SCALE_XY 100 100 9.0 -22.0
+    }
+
+    FRAME "move_jump_06" // Index = 18, FModules = 1
+    {
+        0x2013
+        FM	0x1011	-208	-243	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 11.0
+    }
+
+    FRAME "move_jump_07" // Index = 19, FModules = 1
+    {
+        0x2012
+        FM	0x1012	-206	-247	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -2.0 16.0
+    }
+
+    FRAME "move_jump_08" // Index = 20, FModules = 1
+    {
+        0x2014
+        FM	0x1013	-164	-251	FREE_ROTATE 0	FREE_SCALE_XY 100 100 7.0 16.0
+    }
+
+    FRAME "shadow" // Index = 21, FModules = 1
+    {
+        0x2015
+        FM	0x1014	-45	-44	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations...
+// <Anim> := ANIM ["desc"] { id [<AF1> <AF2> ...] }
+// <AFi>  := AF frame_id time ox oy [FLAGS hex_flags] [+Flags]
+// Flags  := FLIP_X | FLIP_Y | ROT_90
+
+    ANIM "null" // Index = 0, AFrames = 0
+    {
+        0x3000
+    }
+
+    ANIM "move_center_to_left" // Index = 1, AFrames = 3
+    {
+        0x3004
+        AF	0x2001	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2002	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2003	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "move_left_to_center" // Index = 2, AFrames = 3
+    {
+        0x3005
+        AF	0x2004	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2005	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2006	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "move_center_to_right" // Index = 3, AFrames = 3
+    {
+        0x3006
+        AF	0x2007	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2008	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2009	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "move_right_to_center" // Index = 4, AFrames = 3
+    {
+        0x3007
+        AF	0x200A	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x200B	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x200C	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "move_jump" // Index = 5, AFrames = 8
+    {
+        0x3001
+        AF	0x200D	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x200E	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x200F	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2010	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2011	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2013	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2012	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2014	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "shadow" // Index = 6, AFrames = 1
+    {
+        0x3002
+        AF	0x2015	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

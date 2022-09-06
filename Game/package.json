@@ -1,0 +1,17 @@
+{
+  "name": "rnd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "data-export": "node %RIM_TOOLS%/script/DataExport.js",
+    "dev": "%NODE_PATH%/.bin/cross-env NODE_ENV=development %NODE_PATH%/.bin/webpack-dev-server -d --devtool source-map --config index.js --port 8080 --host 0.0.0.0",
+    "build-release": "%NODE_PATH%/.bin/cross-env NODE_ENV=production %NODE_PATH%/.bin/webpack --config index.js -p --progress --profile --colors",
+    "release": "npm run build-release && node raw/jsunifier.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

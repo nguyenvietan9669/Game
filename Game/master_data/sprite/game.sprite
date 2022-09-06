@@ -1,0 +1,946 @@
+// saved by AuroraGT v0.1.2.1 (SpriteEditor v0.1.1.1)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  1
+    // Modules: 92
+    // Frames:  102
+    // Anims:   19
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0000 "..\image\game.png" TRANSP 0x00FF00FF // 0  size: 2048 x 2048  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_LINE)	   -> color width height
+//              if (Type == MD_FILL_RECT_GRAD) -> color01 color02 direction width height
+//              if (Type == MD_GRADIENT_TRIANGLE) -> x0 y0 color0 x1 y1 color1 x2 y2 color2
+//              if (Type == MD_GRADIENT_RECT) -> x0 y0 color0 x1 y1 color1 x2 y2 color2 x3 y3 color3
+//              if (Type == MD_MESH)    -> image numOfCorner p0x p0y p1x p1y p2x p2y ... 
+
+    MODULES
+    {
+        MD	0x1000	MD_IMAGE	0	0	0	1	1	"null"
+        MD	0x101F	MD_IMAGE	0	13	6	53	53	"close"
+        MD	0x1001	MD_IMAGE	0	72	6	53	53	"replay"
+        MD	0x1002	MD_IMAGE	0	134	0	199	53	"gl_logo"
+        MD	0x1003	MD_IMAGE	0	375	7	32	32	"info"
+        MD	0x1004	MD_IMAGE	0	412	6	164	34	"ads"
+        MD	0x1005	MD_IMAGE	0	269	562	170	57	"score_ui"
+        MD	0x1006	MD_IMAGE	0	252	471	184	64	"time_ui"
+        MD	0x1007	MD_IMAGE	0	1479	33	492	304	"exit_popup_bg"
+        MD	0x1008	MD_IMAGE	0	1250	61	175	65	"exit_popup_quit"
+        MD	0x1009	MD_IMAGE	0	1248	143	175	65	"exit_popup_resume"
+        MD	0x1010	MD_IMAGE	0	132	781	76	90	"0"
+        MD	0x1020	MD_IMAGE	0	214	779	53	88	"1"
+        MD	0x1021	MD_IMAGE	0	272	783	76	86	"2"
+        MD	0x1022	MD_IMAGE	0	353	787	65	85	"3"
+        MD	0x1023	MD_IMAGE	0	424	785	63	81	"4"
+        MD	0x1024	MD_IMAGE	0	490	777	71	90	"5"
+        MD	0x1025	MD_IMAGE	0	564	779	62	89	"6"
+        MD	0x1026	MD_IMAGE	0	636	785	60	80	"7"
+        MD	0x1027	MD_IMAGE	0	706	779	60	88	"8"
+        MD	0x1028	MD_IMAGE	0	775	785	68	85	"9"
+        MD	0x106F	MD_IMAGE	0	223	883	58	74	"0_frenzy"
+        MD	0x1070	MD_IMAGE	0	294	881	50	80	"1_frenzy"
+        MD	0x1071	MD_IMAGE	0	364	884	59	74	"2_frenzy"
+        MD	0x1072	MD_IMAGE	0	435	884	64	74	"3_frenzy"
+        MD	0x1073	MD_IMAGE	0	501	884	69	79	"4_frenzy"
+        MD	0x1074	MD_IMAGE	0	582	883	54	74	"5_frenzy"
+        MD	0x1075	MD_IMAGE	0	650	886	57	74	"6_frenzy"
+        MD	0x1076	MD_IMAGE	0	721	887	54	73	"7_frenzy"
+        MD	0x1077	MD_IMAGE	0	793	884	57	74	"8_frenzy"
+        MD	0x1078	MD_IMAGE	0	868	884	56	74	"9_frenzy"
+        MD	0x104F	MD_IMAGE	0	152	898	54	55	"plus"
+        MD	0x106E	MD_IMAGE	0	156	899	53	55	"plus_frenzy"
+        MD	0x1050	MD_IMAGE	0	78	815	47	34	"minus"
+        MD	0x1051	MD_IMAGE	0	224	884	58	74	"red_0"
+        MD	0x1052	MD_IMAGE	0	292	881	61	84	"red_1"
+        MD	0x1053	MD_IMAGE	0	366	884	54	74	"red_2"
+        MD	0x1054	MD_IMAGE	0	435	881	54	74	"red_3"
+        MD	0x1055	MD_IMAGE	0	509	883	57	72	"red_4"
+        MD	0x1056	MD_IMAGE	0	581	882	54	74	"red_5"
+        MD	0x1057	MD_IMAGE	0	651	882	57	74	"red_6"
+        MD	0x1058	MD_IMAGE	0	718	884	55	73	"red_7"
+        MD	0x1059	MD_IMAGE	0	790	885	57	74	"red_8"
+        MD	0x105A	MD_IMAGE	0	865	882	57	74	"red_9"
+        MD	0x100A	MD_IMAGE	0	59	469	142	69	"obstacle_1_left"
+        MD	0x100B	MD_IMAGE	0	80	564	101	185	"obstacle_2_center"
+        MD	0x100C	MD_IMAGE	0	242	654	155	123	"obstacle_left_shadow"
+        MD	0x100D	MD_IMAGE	0	222	656	92	109	"obstacle_center_shadow"
+        MD	0x100E	MD_IMAGE	0	14	73	186	47	"frenzy_bar"
+        MD	0x100F	MD_IMAGE	0	19	148	176	37	"frenzy_gauge"
+        MD	0x1012	MD_IMAGE	0	57	1809	191	199	"item_01"
+        MD	0x1013	MD_IMAGE	0	275	1802	189	207	"item_02"
+        MD	0x1014	MD_IMAGE	0	494	1806	181	202	"item_03"
+        MD	0x1011	MD_IMAGE	0	707	1804	187	205	"item_04"
+        MD	0x1015	MD_IMAGE	0	916	1807	192	204	"item_05"
+        MD	0x1016	MD_IMAGE	0	1133	1807	197	203	"item_06"
+        MD	0x1017	MD_IMAGE	0	1352	1807	197	204	"item_07"
+        MD	0x1018	MD_IMAGE	0	1580	1806	192	205	"item_08"
+        MD	0x1019	MD_IMAGE	0	1814	1806	180	203	"item_09"
+        MD	0x101A	MD_IMAGE	0	1586	1547	183	202	"item_10"
+        MD	0x101B	MD_IMAGE	0	1809	1545	178	202	"item_11"
+        MD	0x101C	MD_IMAGE	0	57	1585	207	202	"disappear_fx_01"
+        MD	0x101D	MD_IMAGE	0	270	1571	231	230	"disappear_fx_02"
+        MD	0x101E	MD_IMAGE	0	497	1521	178	266	"disappear_fx_03"
+        MD	0x1029	MD_IMAGE	0	737	1353	121	414	"disappear_fx_04"
+        MD	0x102A	MD_IMAGE	0	968	1279	90	481	"disappear_fx_05"
+        MD	0x102B	MD_IMAGE	0	1159	1581	156	46	"disappear_fx_06"
+        MD	0x102C	MD_IMAGE	0	1381	780	590	269	"frenzy_txt"
+        MD	0x102D	MD_IMAGE	0	1441	627	438	150	"timeup_txt"
+        MD	0x102E	MD_IMAGE	0	1589	1098	171	99	"go_txt"
+        MD	0x102F	MD_IMAGE	0	1515	536	102	74	"tut_arrow_side_1"
+        MD	0x1030	MD_IMAGE	0	1629	536	102	76	"tut_arrow_side_2"
+        MD	0x1031	MD_IMAGE	0	1733	536	102	76	"tut_arrow_side_3"
+        MD	0x1032	MD_IMAGE	0	1896	443	115	147	"tut_hand"
+        MD	0x1033	MD_IMAGE	0	518	96	492	178	"tutorial_box"
+        MD	0x1034	MD_IMAGE	0	1264	363	349	140	"product_logo"
+        MD	0x1043	MD_IMAGE	0	1264	363	349	45	"product_logo_white"
+        MD	0x103F	MD_IMAGE	0	1264	390	349	30	"product_logo2"
+        MD	0x1035	MD_IMAGE	0	616	10	295	71	"cta"
+        MD	0x1036	MD_IMAGE	0	988	8	185	33	"end_text"
+        MD	0x1037	MD_IMAGE	0	1248	238	175	65	"ok_btn"
+        MD	0x1038	MD_IMAGE	0	25	210	98	50	"connection_bar"
+        MD	0x1039	MD_IMAGE	0	25	278	98	51	"connection_gauge"
+        MD	0x103A	MD_IMAGE	0	25	293	20	34	"connection_gauge_1"
+        MD	0x103B	MD_IMAGE	0	51	288	20	39	"connection_gauge_2"
+        MD	0x103C	MD_IMAGE	0	77	283	20	44	"connection_gauge_3"
+        MD	0x103D	MD_IMAGE	0	103	278	20	51	"connection_gauge_4"
+        MD	0x1040	MD_IMAGE	0	518	303	492	178	"tutorial_box_2"
+        MD	0x1041	MD_IMAGE	0	517	524	493	178	"tutorial_box_3"
+        MD	0x103E	MD_IMAGE	0	1268	712	71	79	"tut_arrow_up_1"
+        MD	0x1042	MD_IMAGE	0	1268	625	71	82	"tut_arrow_up_2"
+        MD	0x1044	MD_IMAGE	0	1268	536	71	83	"tut_arrow_up_3"
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <POi>   := PO numOfCorner x1 y1 x2 y2...
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "null" // Index = 0, FModules = 1
+    {
+        0x2000
+        FM	0x1000	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "close" // Index = 1, FModules = 1
+    {
+        0x2001
+        RC	-50	-50	50	50
+        FM	0x101F	-26	-26	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "replay" // Index = 2, FModules = 1
+    {
+        0x2002
+        RC	-50	-50	50	50
+        FM	0x1001	-26	-26	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "gl_logo" // Index = 3, FModules = 1
+    {
+        0x2003
+        FM	0x1002	-99	-26	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "info" // Index = 4, FModules = 1
+    {
+        0x2004
+        RC	-35	-35	35	35
+        FM	0x1003	-16	-16	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "ads" // Index = 5, FModules = 1
+    {
+        0x2005
+        FM	0x1004	-82	-17	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "score_ui" // Index = 6, FModules = 1
+    {
+        0x2006
+        FM	0x1005	-85	-28	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.5
+    }
+
+    FRAME "time_ui" // Index = 7, FModules = 1
+    {
+        0x2007
+        FM	0x1006	-92	-32	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "exit_popup_bg" // Index = 8, FModules = 1
+    {
+        0x2008
+        FM	0x1007	-247	-152	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -1.0 0.0
+    }
+
+    FRAME "exit_popup_quit" // Index = 9, FModules = 1
+    {
+        0x2009
+        FM	0x1008	-88	-32	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -0.5 0.5
+    }
+
+    FRAME "exit_popup_resume" // Index = 10, FModules = 1
+    {
+        0x200A
+        FM	0x1009	-88	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -0.5 -0.5
+    }
+
+    FRAME "0" // Index = 11, FModules = 1
+    {
+        0x205B
+        FM	0x1051	-29	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "1" // Index = 12, FModules = 1
+    {
+        0x205C
+        FM	0x1052	-33	-42	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "2" // Index = 13, FModules = 1
+    {
+        0x205D
+        FM	0x1053	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "3" // Index = 14, FModules = 1
+    {
+        0x205E
+        FM	0x1054	-31	-38	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "4" // Index = 15, FModules = 1
+    {
+        0x205F
+        FM	0x1055	-28	-39	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "5" // Index = 16, FModules = 1
+    {
+        0x2060
+        FM	0x1056	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "6" // Index = 17, FModules = 1
+    {
+        0x2061
+        FM	0x1057	-28	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "7" // Index = 18, FModules = 1
+    {
+        0x2062
+        FM	0x1058	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "8" // Index = 19, FModules = 1
+    {
+        0x2063
+        FM	0x1059	-28	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "9" // Index = 20, FModules = 1
+    {
+        0x2064
+        FM	0x105A	-28	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "plus" // Index = 21, FModules = 1
+    {
+        0x2065
+        FM	0x104F	-29	-28	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -2.0 0.0
+    }
+
+    FRAME "minus" // Index = 22, FModules = 1
+    {
+        0x2066
+        FM	0x1050	-24	-17	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_0" // Index = 23, FModules = 1
+    {
+        0x2067
+        FM	0x1010	-38	-44	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_1" // Index = 24, FModules = 1
+    {
+        0x2068
+        FM	0x1020	-29	-47	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_2" // Index = 25, FModules = 1
+    {
+        0x2069
+        FM	0x1021	-40	-44	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_3" // Index = 26, FModules = 1
+    {
+        0x206A
+        FM	0x1022	-30	-40	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_4" // Index = 27, FModules = 1
+    {
+        0x206B
+        FM	0x1023	-33	-44	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_5" // Index = 28, FModules = 1
+    {
+        0x206C
+        FM	0x1024	-36	-46	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_6" // Index = 29, FModules = 1
+    {
+        0x206D
+        FM	0x1025	-32	-47	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_7" // Index = 30, FModules = 1
+    {
+        0x206E
+        FM	0x1026	-29	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_8" // Index = 31, FModules = 1
+    {
+        0x206F
+        FM	0x1027	-32	-46	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "red_9" // Index = 32, FModules = 1
+    {
+        0x2070
+        FM	0x1028	-33	-41	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "plus_frenzy" // Index = 33, FModules = 1
+    {
+        0x208C
+        FM	0x106E	-24	-28	FREE_ROTATE 0	FREE_SCALE_XY 100 100 3.0 0.0
+    }
+
+    FRAME "0_frenzy" // Index = 34, FModules = 1
+    {
+        0x208D
+        FM	0x106F	-29	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "1_frenzy" // Index = 35, FModules = 1
+    {
+        0x208E
+        FM	0x1070	-28	-41	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -6.0 -4.0
+    }
+
+    FRAME "2_frenzy" // Index = 36, FModules = 1
+    {
+        0x208F
+        FM	0x1071	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "3_frenzy" // Index = 37, FModules = 1
+    {
+        0x2090
+        FM	0x1072	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "4_frenzy" // Index = 38, FModules = 1
+    {
+        0x2091
+        FM	0x1073	-28	-36	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "5_frenzy" // Index = 39, FModules = 1
+    {
+        0x2092
+        FM	0x1074	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "6_frenzy" // Index = 40, FModules = 1
+    {
+        0x2093
+        FM	0x1075	-29	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "7_frenzy" // Index = 41, FModules = 1
+    {
+        0x2094
+        FM	0x1076	-27	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "8_frenzy" // Index = 42, FModules = 1
+    {
+        0x2095
+        FM	0x1077	-29	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "9_frenzy" // Index = 43, FModules = 1
+    {
+        0x2096
+        FM	0x1078	-28	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "obstacle_1_left" // Index = 44, FModules = 1
+    {
+        0x200B
+        FM	0x100A	-71	-34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.5
+    }
+
+    FRAME "obstacle_1_center" // Index = 45, FModules = 1
+    {
+        0x200C
+        FM	0x100A	71	-34	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+    }
+
+    FRAME "obstacle_1_right" // Index = 46, FModules = 1
+    {
+        0x200D
+        FM	0x100A	71	-34	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.5
+    }
+
+    FRAME "frenzy_bar" // Index = 47, FModules = 1
+    {
+        0x200E
+        FM	0x100E	-93	-23	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.5
+    }
+
+    FRAME "frenzy_gauge" // Index = 48, FModules = 1
+    {
+        0x200F
+        FM	0x100F	-88	-18	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.5
+    }
+
+    FRAME "item_01" // Index = 49, FModules = 1
+    {
+        0x2010
+        FM	0x1012	-96	-99	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -0.5 0.5
+    }
+
+    FRAME "item_02" // Index = 50, FModules = 1
+    {
+        0x2011
+        FM	0x1013	-94	-107	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.5 -0.5
+    }
+
+    FRAME "item_03" // Index = 51, FModules = 1
+    {
+        0x2012
+        FM	0x1014	-86	-102	FREE_ROTATE 0	FREE_SCALE_XY 100 100 3.5 -2.0
+    }
+
+    FRAME "item_04" // Index = 52, FModules = 1
+    {
+        0x2013
+        FM	0x1011	-90	-105	FREE_ROTATE 0	FREE_SCALE_XY 100 100 4.5 -4.5
+    }
+
+    FRAME "item_05" // Index = 53, FModules = 1
+    {
+        0x2014
+        FM	0x1015	-93	-104	FREE_ROTATE 0	FREE_SCALE_XY 100 100 4.0 -7.0
+    }
+
+    FRAME "item_06" // Index = 54, FModules = 1
+    {
+        0x2015
+        FM	0x1016	-98	-103	FREE_ROTATE 0	FREE_SCALE_XY 100 100 2.5 -3.5
+    }
+
+    FRAME "item_07" // Index = 55, FModules = 1
+    {
+        0x2016
+        FM	0x1017	-99	-104	FREE_ROTATE 0	FREE_SCALE_XY 100 100 1.5 -4.0
+    }
+
+    FRAME "item_08" // Index = 56, FModules = 1
+    {
+        0x2017
+        FM	0x1018	-97	-105	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 -3.5
+    }
+
+    FRAME "item_09" // Index = 57, FModules = 1
+    {
+        0x2018
+        FM	0x1019	-85	-103	FREE_ROTATE 0	FREE_SCALE_XY 100 100 6.0 -3.5
+    }
+
+    FRAME "item_10" // Index = 58, FModules = 1
+    {
+        0x2019
+        FM	0x101A	-91	-102	FREE_ROTATE 0	FREE_SCALE_XY 100 100 3.5 -2.0
+    }
+
+    FRAME "item_11" // Index = 59, FModules = 1
+    {
+        0x201A
+        FM	0x101B	-83	-102	FREE_ROTATE 0	FREE_SCALE_XY 100 100 6.0 -1.0
+    }
+
+    FRAME "disappear_fx_01" // Index = 60, FModules = 1
+    {
+        0x201B
+        FM	0x101C	-103	-102	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.5 -1.0
+    }
+
+    FRAME "disappear_fx_02" // Index = 61, FModules = 1
+    {
+        0x201C
+        FM	0x101D	-117	-115	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -1.5 0.0
+    }
+
+    FRAME "disappear_fx_03" // Index = 62, FModules = 1
+    {
+        0x201D
+        FM	0x101E	-100	-133	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -11.0 0.0
+    }
+
+    FRAME "disappear_fx_04" // Index = 63, FModules = 1
+    {
+        0x201E
+        FM	0x1029	-66	-208	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -5.5 -1.0
+    }
+
+    FRAME "disappear_fx_05" // Index = 64, FModules = 1
+    {
+        0x201F
+        FM	0x102A	-49	-241	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -4.0 -0.5
+    }
+
+    FRAME "disappear_fx_06" // Index = 65, FModules = 1
+    {
+        0x2020
+        FM	0x102B	-77	-24	FREE_ROTATE 0	FREE_SCALE_XY 100 100 1.0 -1.0
+    }
+
+    FRAME "frenzy_txt" // Index = 66, FModules = 1
+    {
+        0x2021
+        FM	0x102C	-288	-135	FREE_ROTATE 0	FREE_SCALE_XY 100 100 7.0 -0.5
+    }
+
+    FRAME "timeup_txt" // Index = 67, FModules = 1
+    {
+        0x2022
+        FM	0x102D	-220	-67	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -1.0 8.0
+    }
+
+    FRAME "go_txt" // Index = 68, FModules = 1
+    {
+        0x2023
+        FM	0x102E	-85	-50	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.5 -0.5
+    }
+
+    FRAME "tut_left" // Index = 69, FModules = 1
+    {
+        0x2028
+        FM	0x1032	-65	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 70, FModules = 2
+    {
+        0x2029
+        FM	0x102F	-18	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1032	-105	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 71, FModules = 3
+    {
+        0x202A
+        FM	0x102F	-18	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1030	-103	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1032	-192	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 72, FModules = 4
+    {
+        0x202B
+        FM	0x102F	-18	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1030	-103	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1031	-188	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1032	-278	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 73, FModules = 4
+    {
+        0x202C
+        FM	0x102F	-103	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1030	-188	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1031	-273	-33	FREE_ROTATE 0	FREE_SCALE_XY -100 100 0.0 0.0
+        FM	0x1032	-365	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "tut_right" // Index = 74, FModules = 1
+    {
+        0x2024
+        FM	0x1032	5	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 75, FModules = 2
+    {
+        0x2025
+        FM	0x102F	18	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1032	49	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 40.0 17.0
+    }
+
+    FRAME "" // Index = 76, FModules = 3
+    {
+        0x2026
+        FM	0x102F	18	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1030	103	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1032	129	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 77, FModules = 4
+    {
+        0x2027
+        FM	0x102F	18	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1030	103	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1031	188	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1032	217	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 78, FModules = 4
+    {
+        0x202D
+        FM	0x102F	103	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1030	188	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1031	273	-33	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1032	302	34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "tutorial_box_1" // Index = 79, FModules = 1
+    {
+        0x202E
+        FM	0x1033	-246	-89	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "product_logo" // Index = 80, FModules = 3
+    {
+        0x202F
+        FM	0x1034	-174	-70	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1043	-174	-110	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x103F	-174	-68	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "cta" // Index = 81, FModules = 1
+    {
+        0x2030
+        RC	-352	-283	364	124
+        FM	0x1035	-147	-37	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.5 -1.5
+    }
+
+    FRAME "end_text" // Index = 82, FModules = 1
+    {
+        0x2031
+        FM	0x1036	0	-16	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "ok_btn" // Index = 83, FModules = 1
+    {
+        0x2032
+        FM	0x1037	-87	-32	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.5 0.5
+    }
+
+    FRAME "product_logo2" // Index = 84, FModules = 3
+    {
+        0x203A
+        FM	0x1034	-174	-70	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1043	-174	-110	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x103F	-174	-68	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "product_logo_white" // Index = 85, FModules = 3
+    {
+        0x203F
+        FM	0x1034	-174	-70	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x1043	-174	-110	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        FM	0x103F	-174	-68	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "connection_bar" // Index = 86, FModules = 1
+    {
+        0x2033
+        FM	0x1038	-49	-25	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "connection_gauge" // Index = 87, FModules = 1
+    {
+        0x2034
+        FM	0x1039	-49	-25	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.5
+    }
+
+    FRAME "connection_gauge_1" // Index = 88, FModules = 1
+    {
+        0x2035
+        FM	0x103A	-10	-17	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "connection_gauge_2" // Index = 89, FModules = 1
+    {
+        0x2036
+        FM	0x103B	-10	-19	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "connection_gauge_3" // Index = 90, FModules = 1
+    {
+        0x2037
+        FM	0x103C	-10	-22	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "connection_gauge_4" // Index = 91, FModules = 1
+    {
+        0x2038
+        FM	0x103D	-10	-25	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "obstacle_2_center" // Index = 92, FModules = 1
+    {
+        0x2039
+        FM	0x100B	-50	-92	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "obstacle_2_left" // Index = 93, FModules = 1
+    {
+        0x203B
+        FM	0x100B	-50	-92	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "obstacle_2_right" // Index = 94, FModules = 1
+    {
+        0x203C
+        FM	0x100B	-50	-92	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "tutorial_box_2" // Index = 95, FModules = 1
+    {
+        0x203D
+        FM	0x1040	-246	-91	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 -2.0
+    }
+
+    FRAME "tutorial_box_3" // Index = 96, FModules = 1
+    {
+        0x203E
+        FM	0x1041	-247	-89	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -0.5 0.0
+    }
+
+    FRAME "tut_up" // Index = 97, FModules = 1
+    {
+        0x2040
+        FM	0x1032	26	40	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    FRAME "" // Index = 98, FModules = 2
+    {
+        0x2041
+        FM	0x103E	-36	-34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1032	26	9	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+    }
+
+    FRAME "" // Index = 99, FModules = 3
+    {
+        0x2042
+        FM	0x103E	-36	-34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1042	-36	-112	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -140.0 -79.0
+        FM	0x1032	26	-71	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+    }
+
+    FRAME "" // Index = 100, FModules = 4
+    {
+        0x2043
+        FM	0x103E	-36	-34	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1042	-36	-112	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1044	-36	-190	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1032	26	-141	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+    }
+
+    FRAME "" // Index = 101, FModules = 4
+    {
+        0x2044
+        FM	0x103E	-36	-112	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1042	-36	-190	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1044	-36	-268	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+        FM	0x1032	26	-228	FREE_ROTATE 0	FREE_SCALE_XY 100 100 -54.0 -1.0
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations...
+// <Anim> := ANIM ["desc"] { id [<AF1> <AF2> ...] }
+// <AFi>  := AF frame_id time ox oy [FLAGS hex_flags] [+Flags]
+// Flags  := FLIP_X | FLIP_Y | ROT_90
+
+    ANIM "null" // Index = 0, AFrames = 1
+    {
+        0x2000
+        AF	0x2000	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "item" // Index = 1, AFrames = 11
+    {
+        0x3007
+        AF	0x2010	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2011	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2012	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2013	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2014	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2015	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2016	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2017	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2018	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x2019	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+        AF	0x201A	4	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+    }
+
+    ANIM "disappear_effect" // Index = 2, AFrames = 6
+    {
+        0x3008
+        AF	0x201B	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x201C	3	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x201D	3	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x201E	3	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x201F	3	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2020	3	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "obstacle_1_left" // Index = 3, AFrames = 1
+    {
+        0x3009
+        AF	0x200B	1	50	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+    }
+
+    ANIM "obstacle_1_center" // Index = 4, AFrames = 1
+    {
+        0x300A
+        AF	0x200D	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+    }
+
+    ANIM "obstacle_1_right" // Index = 5, AFrames = 1
+    {
+        0x300B
+        AF	0x200D	1	-50	0	FREE_ROTATE 0	FREE_SCALE_XY 150 150 0.0 0.0
+    }
+
+    ANIM "obstacle_2_right" // Index = 6, AFrames = 1
+    {
+        0x300C
+        AF	0x2039	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 250 250 0.0 0.0
+    }
+
+    ANIM "obstacle_2_left" // Index = 7, AFrames = 1
+    {
+        0x300D
+        AF	0x2039	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 250 250 0.0 0.0
+    }
+
+    ANIM "obstacle_2_center" // Index = 8, AFrames = 1
+    {
+        0x300E
+        AF	0x2039	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 250 250 0.0 0.0
+    }
+
+    ANIM "obstacle_3" // Index = 9, AFrames = 0
+    {
+        0x300F
+    }
+
+    ANIM "obstacle_4" // Index = 10, AFrames = 0
+    {
+        0x3010
+    }
+
+    ANIM "frenzy" // Index = 11, AFrames = 1
+    {
+        0x3000
+        AF	0x2021	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "tut_left" // Index = 12, AFrames = 5
+    {
+        0x3013
+        AF	0x2028	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2029	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202A	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202B	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202C	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "tut_right" // Index = 13, AFrames = 5
+    {
+        0x3014
+        AF	0x2024	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2025	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2026	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2027	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202D	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "tut_left_right" // Index = 14, AFrames = 10
+    {
+        0x3016
+        AF	0x2028	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2029	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202A	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202B	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202C	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2024	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2025	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2026	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2027	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x202D	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "tut_board" // Index = 15, AFrames = 0
+    {
+        0x3017
+    }
+
+    ANIM "time_out" // Index = 16, AFrames = 1
+    {
+        0x301A
+        AF	0x2022	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "go_txt" // Index = 17, AFrames = 1
+    {
+        0x3001
+        AF	0x2023	1	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    ANIM "tut_jump" // Index = 18, AFrames = 5
+    {
+        0x3003
+        AF	0x2040	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2041	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2042	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2043	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+        AF	0x2044	8	0	0	FREE_ROTATE 0	FREE_SCALE_XY 100 100 0.0 0.0
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

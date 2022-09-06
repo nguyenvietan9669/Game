@@ -1,0 +1,53 @@
+class GuiDefine
+{
+	constructor()
+	{
+		this.TEMPLATE_GUI_GFXITEM			= 200;
+		this.TEMPLATE_GUI_TEXTITEM			= 201;
+
+		//FILLRECT ITEM
+		this.FILLRECTITEM_WIDTH_INDEX		= 0;
+		this.FILLRECTITEM_HEIGHT_INDEX		= 1;
+		this.FILLRECTITEM_ALPHA_INDEX		= 2;
+		this.FILLRECTITEM_RED_INDEX			= 3;
+		this.FILLRECTITEM_GREEN_INDEX		= 4;
+		this.FILLRECTITEM_BLUE_INDEX		= 5;
+
+		//GFX ITEM
+		this.GFXITEM_SPRITE_INDEX			= 0;
+		this.GFXITEM_FRAME_INDEX			= 1;
+		this.GFXITEM_ANIM_INDEX				= 2;
+
+		//TEXT ITEM
+		this.TEXTITEM_TEXTID_INDEX			= 0;
+		this.TEXTITEM_TEXTSIZE_INDEX		= 1;
+		this.TEXTITEM_WIDTH_INDEX			= 2;
+		this.TEXTITEM_HEIGHT_INDEX			= 3;
+		this.TEXTITEM_FONT_INDEX			= 4;
+		this.TEXTITEM_RED_INDEX				= 5;
+		this.TEXTITEM_GREEN_INDEX			= 6;
+		this.TEXTITEM_BLUE_INDEX			= 7;
+		this.TEXTITEM_ALIGN_INDEX			= 8;
+		this.TEXTITEM_SHADOW_INDEX			= 9;
+		this.TEXTITEM_SHADOW_RED_INDEX		= 10;
+		this.TEXTITEM_SHADOW_GREEN_INDEX	= 11;
+		this.TEXTITEM_SHADOW_BLUE_INDEX		= 12;
+
+		//ANCHOR
+		this.ANCHOR_NONE					= 0;
+		this.ANCHOR_LEFT					= 1;
+		this.ANCHOR_LEFT_TOP				= 2;
+		this.ANCHOR_LEFT_CENTER				= 3;
+		this.ANCHOR_LEFT_BOTTOM				= 4;
+		this.ANCHOR_RIGHT					= 5;
+		this.ANCHOR_RIGHT_TOP				= 6;
+		this.ANCHOR_RIGHT_CENTER			= 7;
+		this.ANCHOR_RIGHT_BOTTOM			= 8;
+		this.ANCHOR_TOP						= 9;
+		this.ANCHOR_TOP_CENTER				= 10;
+		this.ANCHOR_BOTTOM					= 11;
+		this.ANCHOR_BOTTOM_CENTER			= 12;
+		this.ANCHOR_HCENTER_VCENTER			= 13;
+	}
+}
+module.exports = new GuiDefine();

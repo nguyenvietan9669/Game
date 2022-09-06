@@ -1,0 +1,76 @@
+// Saved by AuroraGT v0.1.2.1
+////////////////////////////////////////////////////////////////////////////////
+
+"tutorial"
+{
+    FLAGS 0x00000000
+    ID 110
+    POS 0 0
+    MAX_ID 11
+    LAYER OBJECT_LAYER "tut_1-3"
+    {
+         FLAGS 0x00000000
+         ID 3
+         POS 375 830
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" -1 14="tut_left_right" 1="TRUE"
+    }
+    LAYER OBJECT_LAYER "tut_2-4"
+    {
+         FLAGS 0x00000000
+         ID 4
+         POS 375 830
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" -1 13="tut_right" 1="TRUE"
+    }
+    LAYER OBJECT_LAYER "tut_3-9"
+    {
+         FLAGS 0x00000000
+         ID 9
+         POS 375 830
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" -1 18="tut_jump" 1="TRUE"
+    }
+    LAYER OBJECT_LAYER "tut_board_1-7"
+    {
+         FLAGS 0x00000000
+         ID 7
+         POS 374 430
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" 79="tutorial_box_1" -1 1="TRUE"
+    }
+    LAYER OBJECT_LAYER "tut_board_2-10"
+    {
+         FLAGS 0x00000000
+         ID 10
+         POS 374 430
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" 95="tutorial_box_2" -1 1="TRUE"
+    }
+    LAYER OBJECT_LAYER "tut_board_3-11"
+    {
+         FLAGS 0x00000000
+         ID 11
+         POS 374 430
+         ANCHOR 13 0
+         ANCHOR_2 0 0
+         DISABLE_OBJECT 0
+         TEMPLATE "GUI_GfxItem"
+         PARAMS 2="game" 96="tutorial_box_3" -1 1="TRUE"
+    }
+}
